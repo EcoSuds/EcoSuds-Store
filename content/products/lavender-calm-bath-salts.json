@@ -1,0 +1,25 @@
+{
+  "name": "Lavender Calm Bath Salts",
+  "slug": "lavender-calm-bath-salts",
+  "sku": "ES-SALT-002",
+  "price": 900,
+  "currency": "PKR",
+  "category": "Bath Salts",
+  "categorySlug": "bath-salts",
+  "badge": "Evening soak",
+  "featured": false,
+  "shortDescription": "Soft lavender-inspired bath salts for a gentle evening ritual.",
+  "description": "A lavender-inspired bath salt option for slow self-care evenings and gift hampers. Use according to personal skin comfort and rinse the tub after use.",
+  "image": "https://images.unsplash.com/photo-1683944433023-027a3f443ae4?auto=format&fit=crop&w=1400&q=80",
+  "gallery": [
+    "https://images.unsplash.com/photo-1683944433023-027a3f443ae4?auto=format&fit=crop&w=1400&q=80",
+    "https://images.unsplash.com/photo-1584683596603-61fbfa842a47?auto=format&fit=crop&w=1400&q=80"
+  ],
+  "details": [
+    "Soft spa-inspired product style",
+    "Good for gift boxes and self-care baskets",
+    "Use in bath water or foot soak",
+    "Availability confirmed on WhatsApp"
+  ],
+  "stockLabel": "Available to order"
+}

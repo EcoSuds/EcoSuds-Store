@@ -1,0 +1,27 @@
+{
+  "title": "Store",
+  "slug": "/store/",
+  "seoTitle": "Shop EcoSuds | Organic Soaps, Bath Salts, Bath Bombs & Shower Steamers",
+  "seoDescription": "Browse the EcoSuds catalog by category, add products to cart and send a WhatsApp order for organic soaps, bath salts, bath bombs, aroma stones and shower steamers.",
+  "hero": {
+    "eyebrow": "EcoSuds store",
+    "title": "Shop soaps, soaks, fizz and aroma rituals.",
+    "lead": "Filter by category, open product details, add favorites to cart and confirm your order with a real person on WhatsApp.",
+    "primaryCta": {
+      "label": "Browse catalog",
+      "href": "#products"
+    },
+    "secondaryCta": {
+      "label": "WhatsApp support",
+      "href": "https://wa.me/923135200949"
+    },
+    "image": "/images/hero/store-hero.webp"
+  },
+  "trust": [
+    "WhatsApp confirmation before payment or dispatch",
+    "Clear local pricing in PKR",
+    "Mobile-first product pages and cart",
+    "Five simple self-care categories",
+    "Careful wording with no unsupported treatment claims"
+  ]
+}

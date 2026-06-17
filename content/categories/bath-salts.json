@@ -1,0 +1,9 @@
+{
+  "name": "Bath Salts",
+  "slug": "bath-salts",
+  "description": "Mineral-inspired soaks for calm bath and foot-soak rituals.",
+  "image": "https://images.unsplash.com/photo-1584683596603-61fbfa842a47?auto=format&fit=crop&w=1400&q=80",
+  "href": "/store/category/bath-salts/",
+  "featured": true,
+  "order": 2
+}

@@ -1,0 +1,25 @@
+{
+  "name": "EcoSuds Honey & Olive Gentle Soap",
+  "slug": "honeycomb-mommy-kids-soap",
+  "sku": "ES-SOAP-005",
+  "price": 550,
+  "currency": "PKR",
+  "category": "Organic Soaps",
+  "categorySlug": "organic-soaps",
+  "badge": "Gentle mood",
+  "featured": true,
+  "shortDescription": "Warm honey and olive-inspired bar for a soft everyday feel.",
+  "description": "A warm EcoSuds bar with honey and olive visual cues. The presentation is calm, soft and gift-friendly while keeping suitability details confirmed by chat.",
+  "image": "/images/ecosuds/soap-honey-olive.webp",
+  "gallery": [
+    "/images/ecosuds/soap-honey-olive.webp",
+    "/images/ecosuds/product-honey-kids.webp"
+  ],
+  "details": [
+    "Warm honey-toned product style",
+    "Gentle-looking everyday mood",
+    "Gift-friendly presentation",
+    "Availability confirmed on WhatsApp"
+  ],
+  "stockLabel": "Available to order"
+}

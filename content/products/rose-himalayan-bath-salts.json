@@ -1,0 +1,25 @@
+{
+  "name": "Rose Himalayan Bath Salts",
+  "slug": "rose-himalayan-bath-salts",
+  "sku": "ES-SALT-001",
+  "price": 850,
+  "currency": "PKR",
+  "category": "Bath Salts",
+  "categorySlug": "bath-salts",
+  "badge": "Rose soak",
+  "featured": true,
+  "shortDescription": "Pink mineral-style bath salts for calm soak and foot-bath rituals.",
+  "description": "A rose-toned bath salt product for customers who enjoy a simple soak ritual. Add to warm bath water or a foot soak according to personal comfort.",
+  "image": "https://images.unsplash.com/photo-1584683596603-61fbfa842a47?auto=format&fit=crop&w=1400&q=80",
+  "gallery": [
+    "https://images.unsplash.com/photo-1584683596603-61fbfa842a47?auto=format&fit=crop&w=1400&q=80",
+    "https://images.unsplash.com/photo-1683944433023-027a3f443ae4?auto=format&fit=crop&w=1400&q=80"
+  ],
+  "details": [
+    "Mineral-inspired pink salt look",
+    "Made for bath or foot-soak routines",
+    "Pair with a soap bundle for gifting",
+    "Availability confirmed on WhatsApp"
+  ],
+  "stockLabel": "Available to order"
+}

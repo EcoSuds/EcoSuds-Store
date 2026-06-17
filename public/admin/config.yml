@@ -1,0 +1,272 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# For local editing, run: npx decap-server
+local_backend: true
+
+publish_mode: editorial_workflow
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+site_url: "/"
+display_url: "/"
+logo_url: "/images/brand/brand-mark.webp"
+
+collections:
+  - name: "settings"
+    label: "Store Settings"
+    files:
+      - name: "site"
+        label: "Global Site Settings"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - { label: "Site Name", name: "siteName", widget: "string" }
+          - { label: "Site URL", name: "siteUrl", widget: "string" }
+          - { label: "Default Title", name: "defaultTitle", widget: "string" }
+          - { label: "Default Description", name: "defaultDescription", widget: "text" }
+          - { label: "SEO Keywords", name: "keywords", widget: "list", field: { label: "Keyword", name: "keyword", widget: "string" } }
+          - label: "Brand"
+            name: "brand"
+            widget: "object"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Initials", name: "initials", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string" }
+              - { label: "Short Store Line", name: "roleLine", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Phone", name: "phone", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "WhatsApp URL", name: "whatsapp", widget: "string" }
+              - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
+              - { label: "Facebook URL", name: "facebook", widget: "string", required: false }
+              - { label: "YouTube URL", name: "youtube", widget: "string", required: false }
+              - { label: "GitHub URL", name: "github", widget: "string", required: false }
+              - { label: "Profile Image", name: "profileImage", widget: "image" }
+              - { label: "Logo", name: "logo", widget: "image" }
+          - label: "SEO"
+            name: "seo"
+            widget: "object"
+            fields:
+              - { label: "Open Graph Image", name: "ogImage", widget: "image" }
+              - { label: "Twitter Handle", name: "twitterHandle", widget: "string", required: false }
+              - { label: "Theme Color Light", name: "themeColorLight", widget: "color" }
+              - { label: "Theme Color Dark", name: "themeColorDark", widget: "color" }
+          - label: "Business Notes"
+            name: "business"
+            widget: "object"
+            fields:
+              - { label: "Store Mode", name: "storeMode", widget: "text" }
+              - { label: "Shipping Note", name: "shippingNote", widget: "text" }
+              - { label: "Care Promise", name: "carePromise", widget: "text" }
+
+      - name: "navigation"
+        label: "Navigation"
+        file: "content/navigation.json"
+        format: "json"
+        fields:
+          - label: "Main Links"
+            name: "main"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Href", name: "href", widget: "string" }
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Href", name: "href", widget: "string" }
+
+      - name: "storefront"
+        label: "Storefront Blocks"
+        file: "content/storefront.json"
+        format: "json"
+        fields:
+          - { label: "Announcement Items", name: "announcement", widget: "list", field: { label: "Announcement", name: "announcement", widget: "string" } }
+          - { label: "Hero Badges", name: "heroBadges", widget: "list", field: { label: "Badge", name: "badge", widget: "string" } }
+          - label: "Trust Cues"
+            name: "trustCues"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Icon", name: "icon", widget: "select", options: ["Leaf", "MessageCircle", "MonitorSmartphone", "Search", "ShieldCheck", "ShoppingBag", "Sparkles", "Store"] }
+          - label: "Order Steps"
+            name: "orderSteps"
+            widget: "list"
+            fields: &stepFields
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - label: "Care Notes"
+            name: "careNotes"
+            widget: "list"
+            fields: *stepFields
+
+  - name: "pages"
+    label: "Store Pages"
+    files:
+      - name: "home"
+        label: "Home"
+        file: "content/pages/home.json"
+        format: "json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Slug", name: "slug", widget: "string" }
+          - { label: "SEO Title", name: "seoTitle", widget: "string" }
+          - { label: "SEO Description", name: "seoDescription", widget: "text" }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields: &heroFields
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title", name: "title", widget: "text" }
+              - { label: "Lead", name: "lead", widget: "text" }
+              - label: "Primary CTA"
+                name: "primaryCta"
+                widget: "object"
+                fields: &ctaFields
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Href", name: "href", widget: "string" }
+              - label: "Secondary CTA"
+                name: "secondaryCta"
+                widget: "object"
+                required: false
+                fields: *ctaFields
+              - { label: "Image", name: "image", widget: "image" }
+          - { label: "Category Intro", name: "intro", widget: "object", fields: &sectionIntroFields [ { label: "Eyebrow", name: "eyebrow", widget: "string" }, { label: "Title", name: "title", widget: "text" }, { label: "Description", name: "description", widget: "text" } ] }
+          - { label: "Featured Product Intro", name: "featuredIntro", widget: "object", fields: *sectionIntroFields }
+          - { label: "Mosaic Intro", name: "mosaicIntro", widget: "object", fields: *sectionIntroFields }
+
+      - name: "ecosuds"
+        label: "EcoSuds Brand Page"
+        file: "content/pages/ecosuds.json"
+        format: "json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Slug", name: "slug", widget: "string" }
+          - { label: "SEO Title", name: "seoTitle", widget: "string" }
+          - { label: "SEO Description", name: "seoDescription", widget: "text" }
+          - { label: "Hero", name: "hero", widget: "object", fields: *heroFields }
+          - { label: "Brand Story", name: "brandStory", widget: "object", fields: *sectionIntroFields }
+          - label: "Benefits"
+            name: "benefits"
+            widget: "list"
+            fields: *stepFields
+          - { label: "Gallery Intro", name: "galleryIntro", widget: "object", fields: *sectionIntroFields }
+
+      - name: "store"
+        label: "Store"
+        file: "content/pages/store.json"
+        format: "json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Slug", name: "slug", widget: "string" }
+          - { label: "SEO Title", name: "seoTitle", widget: "string" }
+          - { label: "SEO Description", name: "seoDescription", widget: "text" }
+          - { label: "Hero", name: "hero", widget: "object", fields: *heroFields }
+          - { label: "Trust Points", name: "trust", widget: "list", field: { label: "Point", name: "point", widget: "string" } }
+
+      - name: "contact"
+        label: "Contact"
+        file: "content/pages/contact.json"
+        format: "json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Slug", name: "slug", widget: "string" }
+          - { label: "SEO Title", name: "seoTitle", widget: "string" }
+          - { label: "SEO Description", name: "seoDescription", widget: "text" }
+          - { label: "Hero", name: "hero", widget: "object", fields: *heroFields }
+          - label: "Contact Cards"
+            name: "contactCards"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Value", name: "value", widget: "string" }
+              - { label: "Href", name: "href", widget: "string" }
+
+  - name: "categories"
+    label: "Product Categories"
+    label_singular: "Category"
+    folder: "content/categories"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string", hint: "Example: bath-salts" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Image", name: "image", widget: "image", hint: "Upload an image or keep a full https image URL." }
+      - { label: "Category Page URL", name: "href", widget: "string", hint: "Example: /store/category/bath-salts/" }
+      - { label: "Featured", name: "featured", widget: "boolean", default: true }
+      - { label: "Sort Order", name: "order", widget: "number", value_type: "int", default: 1 }
+
+  - name: "products"
+    label: "Products"
+    label_singular: "Product"
+    folder: "content/products"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "SKU", name: "sku", widget: "string" }
+      - { label: "Price", name: "price", widget: "number", value_type: "int" }
+      - { label: "Currency", name: "currency", widget: "string", default: "PKR" }
+      - { label: "Category Name", name: "category", widget: "select", options: ["Organic Soaps", "Bath Salts", "Bath Bombs", "Aroma Stones", "Shower Steamers"] }
+      - { label: "Category Slug", name: "categorySlug", widget: "relation", collection: "categories", search_fields: ["name", "slug"], value_field: "slug", display_fields: ["name"] }
+      - { label: "Badge", name: "badge", widget: "string" }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Short Description", name: "shortDescription", widget: "text" }
+      - { label: "Full Description", name: "description", widget: "text" }
+      - { label: "Main Image", name: "image", widget: "image", hint: "Upload an image or use a full https image URL." }
+      - label: "Gallery"
+        name: "gallery"
+        widget: "list"
+        field: { label: "Image", name: "image", widget: "image" }
+      - label: "Details"
+        name: "details"
+        widget: "list"
+        field: { label: "Detail", name: "detail", widget: "string" }
+      - { label: "Stock Label", name: "stockLabel", widget: "string" }
+
+  - name: "faqs"
+    label: "FAQs"
+    folder: "content/faqs"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "Question", name: "question", widget: "string" }
+      - { label: "Answer", name: "answer", widget: "text" }
+
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "content/testimonials"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Role", name: "role", widget: "string" }
+      - { label: "Quote", name: "quote", widget: "text" }
+      - { label: "Rating", name: "rating", widget: "number", value_type: "int", min: 1, max: 5 }
+
+  - name: "policies"
+    label: "Policies"
+    folder: "content/policies"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "SEO Title", name: "seoTitle", widget: "string" }
+      - { label: "SEO Description", name: "seoDescription", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }

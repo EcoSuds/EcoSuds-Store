@@ -1,0 +1,48 @@
+{
+  "title": "EcoSuds",
+  "slug": "/ecosuds/",
+  "seoTitle": "EcoSuds | Organic Soap & Self-Care Brand Pakistan",
+  "seoDescription": "Discover EcoSuds, a self-care brand for organic soaps, bath salts, bath bombs, aroma stones and shower steamers with WhatsApp ordering.",
+  "hero": {
+    "eyebrow": "EcoSuds story",
+    "title": "A fresh online store for everyday self-care.",
+    "lead": "EcoSuds brings gentle-looking product visuals, clear categories and a simple WhatsApp-first checkout into one polished online store.",
+    "primaryCta": {
+      "label": "Shop EcoSuds",
+      "href": "/store/#products"
+    },
+    "secondaryCta": {
+      "label": "Follow Instagram",
+      "href": "https://www.instagram.com/ecosuds2026?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+    },
+    "image": "/images/hero/ecosuds-hero.webp"
+  },
+  "brandStory": {
+    "eyebrow": "Brand story",
+    "title": "Soft color, honest product language and a direct path to order.",
+    "description": "The EcoSuds site focuses on freshness, gifting and simple routines while keeping product claims careful. Customers see real product visuals, clear categories and easy support before placing an order."
+  },
+  "benefits": [
+    {
+      "title": "Organized range",
+      "description": "The store is divided into five categories so customers can quickly find their soap, soak, fizz, aroma or shower ritual."
+    },
+    {
+      "title": "Mobile-first shopping",
+      "description": "Hero banners, quick actions, filters and product cards are built to stay usable on small screens."
+    },
+    {
+      "title": "Human confirmation",
+      "description": "The cart prepares an order message, then availability, delivery and payment are confirmed on WhatsApp."
+    },
+    {
+      "title": "SEO-ready product pages",
+      "description": "Each product has its own searchable page with structured data, clean metadata and descriptive copy."
+    }
+  ],
+  "galleryIntro": {
+    "eyebrow": "Visual range",
+    "title": "Product banners, soap artwork and spa-inspired category visuals.",
+    "description": "The presentation uses the supplied EcoSuds soap artwork across the brand and store while new category imagery can be replaced later through the CMS."
+  }
+}

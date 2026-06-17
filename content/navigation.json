@@ -1,0 +1,24 @@
+{
+  "main": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "EcoSuds",
+      "href": "/ecosuds/"
+    },
+    {
+      "label": "Store",
+      "href": "/store/"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact/"
+    }
+  ],
+  "cta": {
+    "label": "Shop Now",
+    "href": "/store/#products"
+  }
+}

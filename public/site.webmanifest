@@ -1,0 +1,12 @@
+{
+  "name": "EcoSuds Online Store",
+  "short_name": "EcoSuds",
+  "description": "A self-care store for organic soaps, bath salts, bath bombs, aroma stones and shower steamers.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffaf1",
+  "theme_color": "#8eaa83",
+  "icons": [
+    { "src": "/images/brand/brand-mark.webp", "sizes": "200x200", "type": "image/webp" }
+  ]
+}

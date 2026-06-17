@@ -1,0 +1,9 @@
+{
+  "name": "Bath Bombs",
+  "slug": "bath-bombs",
+  "description": "Organic fizz treats for colorful, giftable self-care moments.",
+  "image": "https://images.unsplash.com/photo-1621218095474-24fe8a3ec48e?auto=format&fit=crop&w=1400&q=80",
+  "href": "/store/category/bath-bombs/",
+  "featured": true,
+  "order": 3
+}

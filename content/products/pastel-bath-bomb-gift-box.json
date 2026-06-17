@@ -1,0 +1,25 @@
+{
+  "name": "Pastel Bath Bomb Gift Box",
+  "slug": "bath-bomb-gift-box",
+  "sku": "ES-BOMB-002",
+  "price": 1800,
+  "currency": "PKR",
+  "category": "Bath Bombs",
+  "categorySlug": "bath-bombs",
+  "badge": "Gift box",
+  "featured": false,
+  "shortDescription": "A pastel bath bomb set arranged for birthdays and self-care gifting.",
+  "description": "A giftable pastel bath bomb box for customers who want a soft, colorful self-care present. Set contents are confirmed before dispatch.",
+  "image": "https://images.unsplash.com/photo-1715870330598-268434af4960?auto=format&fit=crop&w=1400&q=80",
+  "gallery": [
+    "https://images.unsplash.com/photo-1715870330598-268434af4960?auto=format&fit=crop&w=1400&q=80",
+    "https://images.unsplash.com/photo-1621218095474-24fe8a3ec48e?auto=format&fit=crop&w=1400&q=80"
+  ],
+  "details": [
+    "Attractive gift-box presentation",
+    "Good for birthdays and care packages",
+    "Prepared WhatsApp order message",
+    "Set contents confirmed before dispatch"
+  ],
+  "stockLabel": "Gift set available"
+}

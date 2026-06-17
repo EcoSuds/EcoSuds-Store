@@ -1,0 +1,24 @@
+{
+  "name": "EcoSuds Cucumber Fresh Soap",
+  "slug": "cucumber-fresh-bar",
+  "sku": "ES-SOAP-007",
+  "price": 520,
+  "currency": "PKR",
+  "category": "Organic Soaps",
+  "categorySlug": "organic-soaps",
+  "badge": "Fresh green",
+  "featured": false,
+  "shortDescription": "Cucumber-inspired bar with a clean, watery green look.",
+  "description": "A fresh green EcoSuds bar with cucumber-inspired styling for simple, clean daily routines.",
+  "image": "/images/ecosuds/soap-cucumber.webp",
+  "gallery": [
+    "/images/ecosuds/soap-cucumber.webp"
+  ],
+  "details": [
+    "Cucumber-inspired presentation",
+    "Simple fresh visual direction",
+    "Good for customers who prefer subtle product styling",
+    "Availability confirmed on WhatsApp"
+  ],
+  "stockLabel": "Available to order"
+}

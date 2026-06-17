@@ -1,0 +1,59 @@
+{
+  "announcement": [
+    
+  ],
+  "trustCues": [
+    {
+      "title": "Real support",
+      "description": "Every order is checked on WhatsApp before payment or dispatch.",
+      "icon": "MessageCircle"
+    },
+    {
+      "title": "Clear catalog",
+      "description": "Products are arranged by category with prices, details and images.",
+      "icon": "ShoppingBag"
+    },
+    {
+      "title": "Mobile friendly",
+      "description": "Navigation, filters, cart and hero imagery are designed for phone screens.",
+      "icon": "MonitorSmartphone"
+    },
+    {
+      "title": "Careful claims",
+      "description": "Copy focuses on routine, scent and freshness rather than unverified medical promises.",
+      "icon": "ShieldCheck"
+    }
+  ],
+  "orderSteps": [
+    {
+      "title": "Choose",
+      "description": "Browse the five EcoSuds categories or use the filter on the store page."
+    },
+    {
+      "title": "Add",
+      "description": "Add products to the local cart without creating an account."
+    },
+    {
+      "title": "Send",
+      "description": "Open the prepared WhatsApp message with product names, quantities and total."
+    },
+    {
+      "title": "Confirm",
+      "description": "Availability, delivery charges and payment method are confirmed manually."
+    }
+  ],
+  "careNotes": [
+    {
+      "title": "For soap lovers",
+      "description": "Keep bars dry between uses and store them on a draining dish for a longer-lasting routine."
+    },
+    {
+      "title": "For bath rituals",
+      "description": "Use bath salts and bath bombs for a relaxing soak according to your own skin comfort."
+    },
+    {
+      "title": "For shower routines",
+      "description": "Place shower steamers where they receive splashes, not a direct heavy stream, for a slower release."
+    }
+  ]
+}

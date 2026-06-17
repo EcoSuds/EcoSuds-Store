@@ -1,0 +1,45 @@
+{
+  "siteName": "EcoSuds",
+  "siteUrl": "https://ecosuds.vercel.app",
+  "defaultTitle": "EcoSuds | Organic Soaps, Bath Salts, Bath Bombs & Shower Steamers",
+  "defaultDescription": "Shop EcoSuds self-care products including organic soaps, bath salts, bath bombs, aroma stones and shower steamers with WhatsApp ordering in Pakistan.",
+  "keywords": [
+    "EcoSuds",
+    "EcoSuds Pakistan",
+    "organic soaps Pakistan",
+    "handmade soap Pakistan",
+    "bath salts Pakistan",
+    "bath bombs Pakistan",
+    "aroma stones Pakistan",
+    "shower steamers Pakistan",
+    "natural self care products",
+    "WhatsApp soap store"
+  ],
+  "brand": {
+    "name": "EcoSuds",
+    "initials": "ES",
+    "tagline": "Self care • Fresh rituals",
+    "roleLine": "Organic soaps, bath salts, bath bombs, aroma stones and shower steamers",
+    "email": "Aimy_1@yahoo.com",
+    "phone": "03135200949",
+    "location": "Quetta Cantt, Pakistan",
+    "whatsapp": "https://wa.me/923135200949",
+    "instagram": "https://www.instagram.com/ecosuds2026?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "facebook": "https://www.facebook.com/profile.php?id=61590416281830&sk=reels_tab",
+    "youtube": "",
+    "github": "",
+    "profileImage": "/images/ecosuds/soap-promotional-square.webp",
+    "logo": "/images/brand/brand-mark.webp"
+  },
+  "seo": {
+    "ogImage": "/images/seo/og-home.webp",
+    "twitterHandle": "",
+    "themeColorLight": "#fffaf1",
+    "themeColorDark": "#171b18"
+  },
+  "business": {
+    "storeMode": "WhatsApp-first catalog with product pages, local cart and manual confirmation.",
+    "shippingNote": "Delivery charges, delivery area and payment method are confirmed on WhatsApp before dispatch.",
+    "carePromise": "Careful product language with no unsupported medical claims."
+  }
+}

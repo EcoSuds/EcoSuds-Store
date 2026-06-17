@@ -1,0 +1,26 @@
+{
+  "name": "EcoSuds Starter Soap Bundle",
+  "slug": "starter-gift-bundle",
+  "sku": "ES-SOAP-009",
+  "price": 2200,
+  "currency": "PKR",
+  "category": "Organic Soaps",
+  "categorySlug": "organic-soaps",
+  "badge": "Bundle",
+  "featured": true,
+  "shortDescription": "A curated soap set for trying multiple EcoSuds bars or gifting.",
+  "description": "A discovery bundle for customers who want to try several EcoSuds soaps or send a neat self-care gift. Exact bar selection is confirmed on WhatsApp.",
+  "image": "/images/ecosuds/soap-range-shelf.webp",
+  "gallery": [
+    "/images/ecosuds/soap-range-shelf.webp",
+    "/images/ecosuds/soap-range-wide.webp",
+    "/images/ecosuds/soap-promotional-square.webp"
+  ],
+  "details": [
+    "Curated soap range selection",
+    "Gift-friendly buying path",
+    "Prepared WhatsApp order message",
+    "Bundle contents confirmed before dispatch"
+  ],
+  "stockLabel": "Bundle available"
+}

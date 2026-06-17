@@ -1,0 +1,26 @@
+{
+  "name": "EcoSuds Turmeric Soap",
+  "slug": "turmeric-glow-soap",
+  "sku": "ES-SOAP-001",
+  "price": 450,
+  "currency": "PKR",
+  "category": "Organic Soaps",
+  "categorySlug": "organic-soaps",
+  "badge": "Warm routine",
+  "featured": true,
+  "shortDescription": "Golden turmeric-inspired bar with a warm, fresh everyday mood.",
+  "description": "A golden EcoSuds bar for customers who enjoy a warm, natural-looking soap routine. The product page keeps the wording focused on freshness, care and daily use.",
+  "image": "/images/ecosuds/soap-turmeric.webp",
+  "gallery": [
+    "/images/ecosuds/soap-turmeric.webp",
+    "/images/ecosuds/soap-turmeric-poster-alt.webp",
+    "/images/ecosuds/product-turmeric.webp"
+  ],
+  "details": [
+    "Warm turmeric-inspired visual style",
+    "Suitable for everyday bath or hand-wash routines",
+    "Batch shade and finish may vary slightly",
+    "Availability confirmed on WhatsApp"
+  ],
+  "stockLabel": "Available to order"
+}

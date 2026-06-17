@@ -1,0 +1,35 @@
+{
+  "title": "Home",
+  "slug": "/",
+  "seoTitle": "EcoSuds | Soap & Self-Care Store Pakistan",
+  "seoDescription": "Shop EcoSuds organic soaps, bath salts, bath bombs, aroma stones and shower steamers through a mobile-first organic products' store with WhatsApp ordering.",
+  "hero": {
+    "eyebrow": "EcoSuds online store",
+    "title": "Organic self-care for softer everyday rituals.",
+    "lead": "Explore EcoSuds soaps and self-care treats made for simple routines, giftable moments and quick WhatsApp ordering across Pakistan.",
+    "primaryCta": {
+      "label": "Shop products",
+      "href": "/store/#products"
+    },
+    "secondaryCta": {
+      "label": "Explore categories",
+      "href": "#categories"
+    },
+    "image": "/images/hero/home-hero.webp"
+  },
+  "intro": {
+    "eyebrow": "Shop by ritual",
+    "title": "Five clear categories, one calm buying path.",
+    "description": "Browse organic soaps, bath salts, bath bombs, aroma stones and shower steamers without clutter. Add items to cart and send a prepared WhatsApp order when ready."
+  },
+  "featuredIntro": {
+    "eyebrow": "Customer favorites",
+    "title": "Fresh soaps, spa soaks and aromatic shower treats.",
+    "description": "The catalog is structured for quick scanning with clear prices, category filters, product details and human order confirmation."
+  },
+  "mosaicIntro": {
+    "eyebrow": "Online store",
+    "title": "A soft, product-first layout built for mobile shoppers.",
+    "description": "Large banner imagery, category cards, trust cues, product mosaics and bottom quick actions keep the store practical on small screens."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Lavender Shower Steamers",
+  "slug": "lavender-shower-steamers",
+  "sku": "ES-STEAM-002",
+  "price": 950,
+  "currency": "PKR",
+  "category": "Shower Steamers",
+  "categorySlug": "shower-steamers",
+  "badge": "Calm steam",
+  "featured": false,
+  "shortDescription": "Lavender-style shower tablets for a soft evening rinse ritual.",
+  "description": "Lavender-inspired shower steamers for a calm aromatic rinse routine. Place where splashes can activate the tablet gradually.",
+  "image": "https://images.unsplash.com/photo-1621218095395-c492e6dde021?auto=format&fit=crop&w=1400&q=80",
+  "gallery": [
+    "https://images.unsplash.com/photo-1621218095395-c492e6dde021?auto=format&fit=crop&w=1400&q=80",
+    "https://www.brambleberry.com/on/demandware.static/-/Sites-brambleberry-master-catalog/default/dw3fda5623/projectimages/PS000321-PS000340/PS000340_EucalyptusShowerSteamers_main.jpg"
+  ],
+  "details": [
+    "Soft aromatic shower routine",
+    "Designed for shower use, not bath soaking",
+    "Keep dry before use",
+    "Availability confirmed on WhatsApp"
+  ],
+  "stockLabel": "Available to order"
+}

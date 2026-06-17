@@ -1,0 +1,25 @@
+{
+  "name": "EcoSuds Lemon & Aloe Vera Soap",
+  "slug": "lemon-aloe-fresh-bar",
+  "sku": "ES-SOAP-003",
+  "price": 520,
+  "currency": "PKR",
+  "category": "Organic Soaps",
+  "categorySlug": "organic-soaps",
+  "badge": "Citrus fresh",
+  "featured": true,
+  "shortDescription": "Sunny lemon and aloe-inspired freshness for a crisp routine.",
+  "description": "A citrus-led EcoSuds bar with a clean lemon and aloe visual style. It is presented for everyday freshness without exaggerated claims.",
+  "image": "/images/ecosuds/soap-lemon-aloe.webp",
+  "gallery": [
+    "/images/ecosuds/soap-lemon-aloe.webp",
+    "/images/ecosuds/product-lemon-aloe.webp"
+  ],
+  "details": [
+    "Sunny citrus product style",
+    "Fresh aloe-inspired green notes",
+    "Good pick for everyday routines",
+    "Availability confirmed on WhatsApp"
+  ],
+  "stockLabel": "Available to order"
+}

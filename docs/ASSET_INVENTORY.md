@@ -1,0 +1,32 @@
+# Asset Inventory
+
+| Asset | Size |
+| --- | --- |
+| `public/images/brand/brand-mark.webp` | 200x200 |
+| `public/images/brand/ecosuds-logo-source.webp` | 500x500 |
+| `public/images/ecosuds/product-aloe-mint.webp` | 1400x1400 |
+| `public/images/ecosuds/product-bundle.webp` | 1400x1400 |
+| `public/images/ecosuds/product-honey-kids.webp` | 1400x1400 |
+| `public/images/ecosuds/product-lemon-aloe.webp` | 1400x1400 |
+| `public/images/ecosuds/product-shea-lavender.webp` | 1400x1400 |
+| `public/images/ecosuds/product-tomato.webp` | 1400x1400 |
+| `public/images/ecosuds/product-turmeric.webp` | 1400x1400 |
+| `public/images/ecosuds/soap-aloe-mint.webp` | 864x1224 |
+| `public/images/ecosuds/soap-cucumber.webp` | 864x1224 |
+| `public/images/ecosuds/soap-honey-olive.webp` | 1152x921 |
+| `public/images/ecosuds/soap-lemon-aloe.webp` | 842x1264 |
+| `public/images/ecosuds/soap-prickly-heat-alt.webp` | 1264x842 |
+| `public/images/ecosuds/soap-prickly-heat.webp` | 1264x842 |
+| `public/images/ecosuds/soap-promotional-square.webp` | 1254x1254 |
+| `public/images/ecosuds/soap-range-horizontal.webp` | 1264x842 |
+| `public/images/ecosuds/soap-range-shelf.webp` | 1024x1024 |
+| `public/images/ecosuds/soap-range-wide.webp` | 1264x842 |
+| `public/images/ecosuds/soap-shea-lavender.webp` | 843x1264 |
+| `public/images/ecosuds/soap-tomato-fruit.webp` | 842x1264 |
+| `public/images/ecosuds/soap-turmeric-poster-alt.webp` | 842x1264 |
+| `public/images/ecosuds/soap-turmeric.webp` | 1023x1537 |
+| `public/images/hero/contact-hero.webp` | 2400x1500 |
+| `public/images/hero/ecosuds-hero.webp` | 2400x1500 |
+| `public/images/hero/home-hero.webp` | 2400x1500 |
+| `public/images/hero/store-hero.webp` | 2400x1500 |
+| `public/images/seo/og-home.webp` | 1200x760 |

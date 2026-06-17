@@ -1,0 +1,37 @@
+{
+  "title": "Contact",
+  "slug": "/contact/",
+  "seoTitle": "Contact EcoSuds | WhatsApp Orders & Product Questions",
+  "seoDescription": "Contact EcoSuds for product questions, WhatsApp orders, delivery confirmation and self-care product support in Pakistan.",
+  "hero": {
+    "eyebrow": "Contact EcoSuds",
+    "title": "Questions, bulk orders and delivery details are one message away.",
+    "lead": "WhatsApp is the fastest way to confirm product availability, delivery charges, payment method and order timing.",
+    "primaryCta": {
+      "label": "Message on WhatsApp",
+      "href": "https://wa.me/923135200949"
+    },
+    "secondaryCta": {
+      "label": "Send email",
+      "href": "mailto:Aimy_1@yahoo.com"
+    },
+    "image": "/images/hero/contact-hero.webp"
+  },
+  "contactCards": [
+    {
+      "label": "WhatsApp",
+      "value": "03135200949",
+      "href": "https://wa.me/923135200949"
+    },
+    {
+      "label": "Email",
+      "value": "Aimy_1@yahoo.com",
+      "href": "mailto:Aimy_1@yahoo.com"
+    },
+    {
+      "label": "Location",
+      "value": "Quetta Cantt, Pakistan",
+      "href": "https://www.google.com/maps/search/Quetta+Cantt+Pakistan"
+    }
+  ]
+}

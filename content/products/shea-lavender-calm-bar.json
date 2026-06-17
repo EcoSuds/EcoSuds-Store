@@ -1,0 +1,25 @@
+{
+  "name": "EcoSuds Shea Butter & Lavender Soap",
+  "slug": "shea-lavender-calm-bar",
+  "sku": "ES-SOAP-006",
+  "price": 580,
+  "currency": "PKR",
+  "category": "Organic Soaps",
+  "categorySlug": "organic-soaps",
+  "badge": "Calm ritual",
+  "featured": true,
+  "shortDescription": "Lavender and shea-inspired bar with a soft spa-style look.",
+  "description": "A calm, floral EcoSuds bar with lavender and shea styling for relaxed evening routines and thoughtful gifting.",
+  "image": "/images/ecosuds/soap-shea-lavender.webp",
+  "gallery": [
+    "/images/ecosuds/soap-shea-lavender.webp",
+    "/images/ecosuds/product-shea-lavender.webp"
+  ],
+  "details": [
+    "Soft lavender visual palette",
+    "Spa-style shelf appeal",
+    "Works well in gift sets",
+    "Availability confirmed on WhatsApp"
+  ],
+  "stockLabel": "Available to order"
+}

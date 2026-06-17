@@ -1,0 +1,25 @@
+{
+  "name": "EcoSuds Summer Cooling Soap",
+  "slug": "prickly-heat-cooling-soap",
+  "sku": "ES-SOAP-008",
+  "price": 580,
+  "currency": "PKR",
+  "category": "Organic Soaps",
+  "categorySlug": "organic-soaps",
+  "badge": "Summer pick",
+  "featured": false,
+  "shortDescription": "A summer green bar with a cool, refreshing product mood.",
+  "description": "A seasonal EcoSuds soap with cool green styling for hot-weather routines. The copy stays focused on comfort and freshness rather than treatment claims.",
+  "image": "/images/ecosuds/soap-prickly-heat.webp",
+  "gallery": [
+    "/images/ecosuds/soap-prickly-heat.webp",
+    "/images/ecosuds/soap-prickly-heat-alt.webp"
+  ],
+  "details": [
+    "Cool green campaign style",
+    "Seasonal summer routine positioning",
+    "Fresh shelf presence",
+    "Availability confirmed on WhatsApp"
+  ],
+  "stockLabel": "Seasonal batch"
+}

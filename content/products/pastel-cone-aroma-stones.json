@@ -1,0 +1,25 @@
+{
+  "name": "Pastel Cone Aroma Stones",
+  "slug": "cone-aroma-stones",
+  "sku": "ES-AROMA-002",
+  "price": 700,
+  "currency": "PKR",
+  "category": "Aroma Stones",
+  "categorySlug": "aroma-stones",
+  "badge": "Organic decor",
+  "featured": false,
+  "shortDescription": "Cone-shaped aroma stones for a soft decorative ritual.",
+  "description": "Aroma-stone style for customers who want a small decorative scent accessory. Place on a tray or shelf and use fragrance carefully.",
+  "image": "https://images.unsplash.com/photo-1740377015479-bf6cc1102bd9?auto=format&fit=crop&w=1400&q=80",
+  "gallery": [
+    "https://images.unsplash.com/photo-1740377015479-bf6cc1102bd9?auto=format&fit=crop&w=1400&q=80",
+    "https://images.unsplash.com/photo-1621554012188-c3f2280703c3?auto=format&fit=crop&w=1400&q=80"
+  ],
+  "details": [
+    "Attractive decorative form",
+    "Good for small room styling",
+    "Works well in curated gift boxes",
+    "Availability confirmed on WhatsApp"
+  ],
+  "stockLabel": "Available to order"
+}

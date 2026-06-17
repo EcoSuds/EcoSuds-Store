@@ -1,0 +1,25 @@
+{
+  "name": "Eucalyptus Shower Steamers",
+  "slug": "eucalyptus-shower-steamers",
+  "sku": "ES-STEAM-001",
+  "price": 950,
+  "currency": "PKR",
+  "category": "Shower Steamers",
+  "categorySlug": "shower-steamers",
+  "badge": "Fresh steam",
+  "featured": true,
+  "shortDescription": "Fresh eucalyptus-style shower tablets for aromatic steam routines.",
+  "description": "Shower steamers for customers who want a fresh aromatic shower ritual without a bathtub. Place away from direct heavy water flow for a slower release.",
+  "image": "https://www.brambleberry.com/on/demandware.static/-/Sites-brambleberry-master-catalog/default/dw3fda5623/projectimages/PS000321-PS000340/PS000340_EucalyptusShowerSteamers_main.jpg",
+  "gallery": [
+    "https://www.brambleberry.com/on/demandware.static/-/Sites-brambleberry-master-catalog/default/dw3fda5623/projectimages/PS000321-PS000340/PS000340_EucalyptusShowerSteamers_main.jpg",
+    "https://images.unsplash.com/photo-1621218095395-c492e6dde021?auto=format&fit=crop&w=1400&q=80"
+  ],
+  "details": [
+    "Fresh shower aroma ritual",
+    "Use on shower floor or shelf away from direct stream",
+    "Good for customers without a bathtub",
+    "Availability confirmed on WhatsApp"
+  ],
+  "stockLabel": "Available to order"
+}

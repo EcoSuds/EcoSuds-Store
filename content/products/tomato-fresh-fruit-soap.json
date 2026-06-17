@@ -1,0 +1,25 @@
+{
+  "name": "EcoSuds Tomato Fruit Soap",
+  "slug": "tomato-fresh-fruit-soap",
+  "sku": "ES-SOAP-002",
+  "price": 450,
+  "currency": "PKR",
+  "category": "Organic Soaps",
+  "categorySlug": "organic-soaps",
+  "badge": "Fruit fresh",
+  "featured": true,
+  "shortDescription": "A bright fruit-inspired bar with clean red product energy.",
+  "description": "A vibrant EcoSuds bar with tomato-fruit styling for shoppers who prefer a lively, fresh-looking soap on the shelf.",
+  "image": "/images/ecosuds/soap-tomato-fruit.webp",
+  "gallery": [
+    "/images/ecosuds/soap-tomato-fruit.webp",
+    "/images/ecosuds/product-tomato.webp"
+  ],
+  "details": [
+    "Bright fruit-led product mood",
+    "Clean daily-use positioning",
+    "Pairs well with gift bundles",
+    "Availability confirmed on WhatsApp"
+  ],
+  "stockLabel": "Available to order"
+}
