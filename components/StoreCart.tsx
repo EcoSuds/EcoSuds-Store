@@ -38,6 +38,11 @@ export function CartProvider({ children, brand }: { children: React.ReactNode; b
     try { localStorage.setItem("ecosuds-cart", JSON.stringify(items)); } catch {}
   }, [items]);
 
+  useEffect(() => {
+    document.body.classList.toggle("cart-open", open);
+    return () => document.body.classList.remove("cart-open");
+  }, [open]);
+
   const count = items.reduce((sum, item) => sum + item.quantity, 0);
   const total = items.reduce((sum, item) => sum + item.quantity * item.price, 0);
 

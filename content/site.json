@@ -18,7 +18,7 @@
   "brand": {
     "name": "EcoSuds",
     "initials": "ES",
-    "tagline": "Self care • Fresh rituals",
+    "tagline": "Organic • Handmade • Pure • Natural",
     "roleLine": "Organic soaps, bath salts, bath bombs, aroma stones and shower steamers",
     "email": "Aimy_1@yahoo.com",
     "phone": "03135200949",
@@ -29,7 +29,7 @@
     "youtube": "",
     "github": "",
     "profileImage": "/images/ecosuds/soap-promotional-square.webp",
-    "logo": "/images/brand/brand-mark.webp"
+    "logo": "/images/brand/ecosuds-logo.webp"
   },
   "seo": {
     "ogImage": "/images/seo/og-home.webp",

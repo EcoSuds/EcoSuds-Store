@@ -11,7 +11,7 @@ export function MobileDock({ site }: { site: SiteData }) {
     <div className="fixed inset-x-0 bottom-0 z-[100] px-3 pb-[calc(env(safe-area-inset-bottom)+0.75rem)] md:hidden">
       <nav className="mx-auto grid max-w-md grid-cols-5 gap-1 rounded-[1.6rem] border border-[color:var(--border)] bg-[color:var(--bg-strong)]/94 p-2 shadow-lift backdrop-blur-2xl" aria-label="Mobile quick actions">
         <Link href="/" className="mobile-dock-link focus-ring touch-manipulation"><Home className="h-4 w-4" /><span>Home</span></Link>
-        <Link href="/ecosuds/" className="mobile-dock-link focus-ring touch-manipulation"><Sparkles className="h-4 w-4" /><span>EcoSuds</span></Link>
+        <Link href="/ecosuds/" className="mobile-dock-link focus-ring touch-manipulation"><Sparkles className="h-4 w-4" /><span>About</span></Link>
         <Link href="/store/#products" className="mobile-dock-link focus-ring touch-manipulation"><Store className="h-4 w-4" /><span>Store</span></Link>
         <button type="button" onClick={openCart} className="mobile-dock-link focus-ring relative touch-manipulation" aria-label="Open cart">
           <ShoppingBag className="h-4 w-4" /><span>Cart</span>

@@ -11,7 +11,7 @@ public_folder: "/uploads"
 
 site_url: "/"
 display_url: "/"
-logo_url: "/images/brand/brand-mark.webp"
+logo_url: "/images/brand/ecosuds-logo.webp"
 
 collections:
   - name: "settings"
@@ -140,7 +140,7 @@ collections:
           - { label: "Mosaic Intro", name: "mosaicIntro", widget: "object", fields: *sectionIntroFields }
 
       - name: "ecosuds"
-        label: "EcoSuds Brand Page"
+        label: "About Us Page"
         file: "content/pages/ecosuds.json"
         format: "json"
         fields:

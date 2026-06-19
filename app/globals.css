@@ -217,6 +217,23 @@ button, a, input, textarea, select { outline-color: var(--ring); -webkit-tap-hig
   background: transparent;
 }
 
+
+.header-shop-cta {
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--sage-strong), transparent 50%);
+  color: var(--text);
+  box-shadow: 0 14px 28px rgba(32, 51, 33, .12);
+}
+.dark .header-shop-cta {
+  background: color-mix(in oklab, var(--sage-strong), transparent 58%);
+  color: #f4ead3;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, .24);
+}
+.header-shop-cta:hover {
+  border-color: var(--sage);
+  filter: saturate(1.04) brightness(1.02);
+}
+
 .nav-cta {
   border: 1px solid transparent;
   background: #203321;

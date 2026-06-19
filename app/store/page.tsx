@@ -1,7 +1,5 @@
 import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
-import { CategoryTiles } from "@/components/CategoryTiles";
-import { FeatureBento } from "@/components/FeatureBento";
 import { Hero } from "@/components/Hero";
 import { ProductGrid } from "@/components/ProductGrid";
 import { Reveal } from "@/components/Reveal";
@@ -35,9 +33,9 @@ export default function StorePage() {
       />
 
       <section id="content" className="section-pad-tight">
-        <div className="container-page">
-          <Reveal><SectionHeader eyebrow="Shop by category" title="Find the right EcoSuds ritual faster." description="Each category has a dedicated page and product filters, so customers can browse the range without feeling lost." align="center" /></Reveal>
-          <div className="mt-10"><CategoryTiles categories={categories} products={products} /></div>
+        <div id="products" className="container-page scroll-mt-[calc(var(--nav-h)+1rem)]">
+          <Reveal><SectionHeader eyebrow="Our products" title="Browse EcoSuds soaps, soaks, fizz and aroma products." description="Use filters to narrow the range, open product details, or add items directly to cart." align="center" /></Reveal>
+          <div className="mt-10"><ProductGrid products={products} /></div>
         </div>
       </section>
 
@@ -68,24 +66,10 @@ export default function StorePage() {
         </div>
       </section>
 
-      <section className="section-pad-tight">
-        <div className="container-page">
-          <Reveal><SectionHeader eyebrow="Trust cues" title="Built around clarity, mobile shopping and careful product language." description="The customer sees what matters: product type, price, category, stock label and direct support." align="center" /></Reveal>
-          <div className="mt-10"><FeatureBento features={storefront.trustCues} /></div>
-        </div>
-      </section>
-
-      <section className="section-pad-tight">
+      <section className="section-pad">
         <div className="container-page">
           <Reveal><SectionHeader eyebrow="Order flow" title="Four steps from browsing to confirmation." description="The cart stays simple and local; the final order happens through WhatsApp for human confirmation." align="center" /></Reveal>
           <div className="mt-10"><StepFlow steps={storefront.orderSteps} /></div>
-        </div>
-      </section>
-
-      <section id="products" className="section-pad">
-        <div className="container-page">
-          <Reveal><SectionHeader eyebrow="Product catalog" title="Browse EcoSuds soaps, soaks, fizz and aroma products." description="Use filters to narrow the range, open product details, or add items directly to cart." align="center" /></Reveal>
-          <div className="mt-10"><ProductGrid products={products} /></div>
         </div>
       </section>
     </>

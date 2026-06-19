@@ -7,11 +7,39 @@ import { JsonLd } from "@/components/JsonLd";
 import { ProductGrid } from "@/components/ProductGrid";
 import { Reveal } from "@/components/Reveal";
 import { SectionHeader } from "@/components/SectionHeader";
+import { VideoFrame } from "@/components/VideoFrame";
 import { getCategory, getProduct, getProducts, getSiteData, siteUrl } from "@/lib/content";
 import { formatPrice } from "@/lib/format";
 import { makeMetadata } from "@/lib/seo";
 
 export const dynamicParams = false;
+
+type ProductVideo = { src: string; poster: string; title: string };
+
+function getProductCareNote(categorySlug: string): string {
+  const notes: Record<string, string> = {
+    "organic-soaps": "Keep the bar dry between uses and place it on a draining soap dish so it lasts longer.",
+    "bath-salts": "Add to warm bath water or a foot soak according to personal comfort, then rinse the tub after use.",
+    "bath-bombs": "Use one bath bomb in warm water and avoid storing it where steam or splashes can activate it early.",
+    "aroma-stones": "Place stones on a protected tray or dish and use only a suitable fragrance oil according to instructions.",
+    "shower-steamers": "Place the steamer where it receives splashes, not a direct heavy stream, for a slower release."
+  };
+
+  return notes[categorySlug] || "Store in a cool, dry place and confirm product-specific use instructions on WhatsApp before dispatch.";
+}
+
+function getProductVideo(slug: string): ProductVideo | null {
+  const videos: Record<string, ProductVideo> = {
+    "turmeric-glow-soap": {
+      src: "/videos/turmeric-soap.mp4",
+      poster: "/images/ecosuds/soap-turmeric.webp",
+      title: "EcoSuds turmeric soap product video"
+    }
+  };
+
+  return videos[slug] || null;
+}
+
 
 export function generateStaticParams() {
   return getProducts().map((product) => ({ slug: product.slug }));
@@ -41,6 +69,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
     .slice(0, 3);
   const fallbackRelated = related.length ? related : getProducts().filter((item) => item.slug !== product.slug).slice(0, 3);
   const message = encodeURIComponent(`Hello EcoSuds, I want to ask about ${product.name} (${formatPrice(product.price, product.currency)}). Please confirm availability and delivery.`);
+  const careNote = getProductCareNote(product.categorySlug);
+  const productVideo = getProductVideo(product.slug);
   const productJsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -80,6 +110,11 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                     ))}
                   </div>
                 ) : null}
+                {productVideo ? (
+                  <div className="mt-2">
+                    <VideoFrame src={productVideo.src} poster={productVideo.poster} title={productVideo.title} />
+                  </div>
+                ) : null}
               </div>
             </Reveal>
             <Reveal delay={0.08}>
@@ -99,6 +134,10 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                       <span className="text-sm font-bold leading-6 text-[color:var(--muted)]">{item}</span>
                     </div>
                   ))}
+                </div>
+                <div className="mt-5 rounded-[1.5rem] border border-[color:var(--border)] bg-[color:var(--mint)] p-4">
+                  <p className="text-xs font-black uppercase tracking-[0.16em] text-[color:var(--sage-strong)]">Care note</p>
+                  <p className="mt-2 text-sm font-bold leading-6 text-[color:var(--muted)]">{careNote}</p>
                 </div>
                 <div className="mt-7 grid gap-3 md:grid-cols-2">
                   <AddToCartButton product={product} />

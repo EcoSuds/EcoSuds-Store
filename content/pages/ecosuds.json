@@ -1,12 +1,12 @@
 {
-  "title": "EcoSuds",
+  "title": "About Us",
   "slug": "/ecosuds/",
-  "seoTitle": "EcoSuds | Organic Soap & Self-Care Brand Pakistan",
+  "seoTitle": "About Us | EcoSuds Organic Soap & Self-Care Brand Pakistan",
   "seoDescription": "Discover EcoSuds, a self-care brand for organic soaps, bath salts, bath bombs, aroma stones and shower steamers with WhatsApp ordering.",
   "hero": {
-    "eyebrow": "EcoSuds story",
-    "title": "A fresh online store for everyday self-care.",
-    "lead": "EcoSuds brings gentle-looking product visuals, clear categories and a simple WhatsApp-first checkout into one polished online store.",
+    "eyebrow": "About EcoSuds",
+    "title": "A fresh organic self-care brand for everyday rituals.",
+    "lead": "EcoSuds brings organic, handmade, pure and natural product visuals, clear categories and a simple WhatsApp-first checkout into one polished online store.",
     "primaryCta": {
       "label": "Shop EcoSuds",
       "href": "/store/#products"
@@ -19,7 +19,7 @@
   },
   "brandStory": {
     "eyebrow": "Brand story",
-    "title": "Soft color, honest product language and a direct path to order.",
+    "title": "Organic care, soft color and a direct path to order.",
     "description": "The EcoSuds site focuses on freshness, gifting and simple routines while keeping product claims careful. Customers see real product visuals, clear categories and easy support before placing an order."
   },
   "benefits": [
@@ -41,7 +41,7 @@
     }
   ],
   "galleryIntro": {
-    "eyebrow": "Visual range",
+    "eyebrow": "Our products",
     "title": "Product banners, soap artwork and spa-inspired category visuals.",
     "description": "The presentation uses the supplied EcoSuds soap artwork across the brand and store while new category imagery can be replaced later through the CMS."
   }
