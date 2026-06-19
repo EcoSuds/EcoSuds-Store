@@ -23,7 +23,7 @@ export function Navbar({
 }) {
   const [open, setOpen] = useState(false);
   const { count, openCart } = useCart();
-  const pathname = usePathname();
+  const pathname = usePathname() ?? "";
   const announcementText = useMemo(() => announcement.filter(Boolean).join("  •  "), [announcement]);
 
   useEffect(() => {
