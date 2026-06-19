@@ -4,12 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { Menu, ShoppingBag, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
+import { usePathname } from "next/navigation";
 import type { NavigationData, SiteData } from "@/lib/types";
 import { ThemeToggle } from "./ThemeToggle";
 import { useCart } from "./StoreCart";
 
 const iconButtonClasses =
-  "focus-ring pointer-events-auto relative inline-flex h-10 w-10 shrink-0 touch-manipulation select-none items-center justify-center rounded-full border border-[color:var(--border)] bg-[color:var(--bg-elevated)] text-[color:var(--text)] shadow-sm transition hover:-translate-y-0.5 hover:border-[color:var(--sage)] active:translate-y-px";
+  "focus-ring pointer-events-auto relative inline-flex h-10 w-10 shrink-0 touch-manipulation select-none items-center justify-center rounded-full text-[color:var(--text)] transition hover:-translate-y-0.5 active:translate-y-px";
 
 export function Navbar({
   site,
@@ -22,6 +23,7 @@ export function Navbar({
 }) {
   const [open, setOpen] = useState(false);
   const { count, openCart } = useCart();
+  const pathname = usePathname();
   const announcementText = useMemo(() => announcement.filter(Boolean).join("  •  "), [announcement]);
 
   useEffect(() => {
@@ -33,7 +35,6 @@ export function Navbar({
     function closeOnResize() {
       if (window.innerWidth >= 1024) setOpen(false);
     }
-
     window.addEventListener("resize", closeOnResize);
     return () => window.removeEventListener("resize", closeOnResize);
   }, []);
@@ -58,18 +59,29 @@ export function Navbar({
         </Link>
 
         <div className="hidden shrink-0 items-center gap-1 lg:flex">
-          {navigation.main.map((item) => (
-            <Link key={item.href} href={item.href} className="focus-ring rounded-full px-3 py-2 text-sm font-bold text-[color:var(--muted)] transition hover:bg-[color:var(--mint)] hover:text-[color:var(--text)]">
-              {item.label}
-            </Link>
-          ))}
+          {navigation.main.map((item) => {
+            const isActive = pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href));
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`focus-ring rounded-full px-3 py-2 text-sm font-bold transition ${
+                  isActive
+                    ? "bg-[color:var(--mint)] text-[color:var(--text)]"
+                    : "text-[color:var(--muted)] hover:bg-[color:var(--mint)] hover:text-[color:var(--text)]"
+                }`}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
         </div>
 
         <div className="relative z-30 flex shrink-0 items-center gap-1.5 sm:gap-2">
           <button
             type="button"
             onClick={openCart}
-            className={iconButtonClasses}
+            className="focus-ring pointer-events-auto relative inline-flex h-10 w-10 shrink-0 touch-manipulation select-none items-center justify-center rounded-full border border-[color:var(--border)] bg-[color:var(--bg-elevated)] text-[color:var(--text)] shadow-sm transition hover:-translate-y-0.5 hover:border-[color:var(--sage)] active:translate-y-px"
             aria-label="Open cart"
           >
             <ShoppingBag className="h-4 w-4" />
@@ -78,7 +90,7 @@ export function Navbar({
           <ThemeToggle />
           <Link
             href={navigation.cta.href}
-            className="focus-ring header-shop-cta hidden shrink-0 touch-manipulation select-none rounded-full px-4 py-3 text-sm font-black shadow-sm transition-all duration-200 hover:-translate-y-0.5 active:translate-y-px md:inline-flex"
+            className="focus-ring hidden shrink-0 touch-manipulation select-none rounded-full px-4 py-3 text-sm font-black text-[color:var(--sage-strong)] transition-all duration-200 hover:-translate-y-0.5 hover:text-[color:var(--text)] active:translate-y-px md:inline-flex"
             onClick={() => setOpen(false)}
           >
             {navigation.cta.label}
@@ -99,12 +111,28 @@ export function Navbar({
       {open ? (
         <div id="mobile-menu" className="container-page pointer-events-auto relative z-20 mt-3 max-h-[calc(100svh-var(--nav-h)-1rem)] overflow-y-auto rounded-[1.7rem] border border-[color:var(--border)] bg-[color:var(--bg-strong)] p-3 shadow-lift lg:hidden">
           <div className="grid gap-1">
-            {navigation.main.map((item) => (
-              <Link key={item.href} href={item.href} onClick={() => setOpen(false)} className="focus-ring touch-manipulation rounded-2xl px-4 py-3 text-base font-black text-[color:var(--text)] transition hover:bg-[color:var(--mint)]">
-                {item.label}
-              </Link>
-            ))}
-            <Link href={navigation.cta.href} onClick={() => setOpen(false)} className="focus-ring header-shop-cta mt-2 inline-flex touch-manipulation justify-center rounded-2xl px-4 py-3 text-center text-base font-black">
+            {navigation.main.map((item) => {
+              const isActive = pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href));
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setOpen(false)}
+                  className={`focus-ring touch-manipulation rounded-2xl px-4 py-3 text-base font-black transition ${
+                    isActive
+                      ? "bg-[color:var(--mint)] text-[color:var(--text)]"
+                      : "text-[color:var(--text)] hover:bg-[color:var(--mint)]"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
+            <Link
+              href={navigation.cta.href}
+              onClick={() => setOpen(false)}
+              className="focus-ring mt-2 inline-flex touch-manipulation justify-center rounded-2xl px-4 py-3 text-center text-base font-black text-[color:var(--sage-strong)] transition hover:text-[color:var(--text)]"
+            >
               {navigation.cta.label}
             </Link>
           </div>

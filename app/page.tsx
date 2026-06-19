@@ -57,33 +57,35 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-pad">
-        <div className="container-page grid gap-6 lg:grid-cols-[.9fr_1.1fr] lg:items-start">
-          <Reveal>
-            <SectionHeader eyebrow="Customer reviews" title="Short answers and proof points keep decisions easy." description="FAQs and testimonials are editable in the CMS, so a novice can keep the store fresh without touching the layout code." />
-          </Reveal>
-          <div className="grid gap-4 md:grid-cols-2">
-            {testimonials.map((item, index) => (
-              <Reveal key={item.name} delay={index * 0.04}>
-                <article className="surface h-full rounded-[2rem] p-6">
-                  <div className="text-xl text-[color:var(--gold)]">{"★".repeat(item.rating)}</div>
-                  <p className="mt-4 text-base font-semibold leading-7 text-[color:var(--text)]">“{item.quote}”</p>
-                  <p className="mt-5 text-sm font-black text-[color:var(--sage-strong)]">{item.name}</p>
-                  <p className="text-sm font-bold text-[color:var(--muted)]">{item.role}</p>
-                </article>
-              </Reveal>
-            ))}
-            {faqs.map((faq, index) => (
-              <Reveal key={faq.question} delay={(index + testimonials.length) * 0.04}>
-                <article className="surface h-full rounded-[2rem] p-6">
-                  <h3 className="text-lg font-black tracking-[-0.03em]">{faq.question}</h3>
-                  <p className="body-text mt-3">{faq.answer}</p>
-                </article>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
+     <section className="section-pad">
+  <div className="container-page">
+    <Reveal>
+      <p className="eyebrow mb-6 text-xs font-black uppercase tracking-widest text-[color:var(--muted)]">
+        Customer reviews
+      </p>
+    </Reveal>
+    <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+      {testimonials.map((item, index) => (
+        <Reveal key={item.name} delay={index * 0.04}>
+          <article className="surface h-full rounded-[2rem] p-6">
+            <div className="text-xl text-[color:var(--gold)]">{"★".repeat(item.rating)}</div>
+            <p className="mt-4 text-base font-semibold leading-7 text-[color:var(--text)]">"{item.quote}"</p>
+            <p className="mt-5 text-sm font-black text-[color:var(--sage-strong)]">{item.name}</p>
+            <p className="text-sm font-bold text-[color:var(--muted)]">{item.role}</p>
+          </article>
+        </Reveal>
+      ))}
+      {faqs.map((faq, index) => (
+        <Reveal key={faq.question} delay={(index + testimonials.length) * 0.04}>
+          <article className="surface h-full rounded-[2rem] p-6">
+            <h3 className="text-lg font-black tracking-[-0.03em]">{faq.question}</h3>
+            <p className="body-text mt-3">{faq.answer}</p>
+          </article>
+        </Reveal>
+      ))}
+    </div>
+  </div>
+</section>
     </>
   );
 }
