@@ -6,3 +6,8 @@ out
 *.log
 .netlify
 .vercel
+
+# Ignore accidental duplicate project folders
+* - Copy/
+*-copy/
+
