@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { ButtonLink } from "@/components/ButtonLink";
-import { CategoryTiles } from "@/components/CategoryTiles";
 import { FeatureBento } from "@/components/FeatureBento";
 import { Hero } from "@/components/Hero";
 import { Reveal } from "@/components/Reveal";
@@ -17,7 +16,6 @@ export const metadata = makeMetadata({ title: page.seoTitle, description: page.s
 
 type BrandStory = { eyebrow: string; title: string; description: string };
 type Benefit = { title: string; description: string };
-type GalleryIntro = { eyebrow: string; title: string; description: string };
 
 export default function EcoSudsPage() {
   const products = getProducts();
@@ -25,7 +23,6 @@ export default function EcoSudsPage() {
   const storefront = getStorefront();
   const story = page.brandStory as BrandStory;
   const benefits = page.benefits as Benefit[];
-  const galleryIntro = page.galleryIntro as GalleryIntro;
   const gallery = [
     { title: "EcoSuds organic range", description: "The converted EcoSuds banner now supports the About Us story and product range presentation.", image: "/images/ecosuds/ecosuds-banner.webp", badge: "EcoSuds" },
     { title: "EcoSuds product range", description: "A wide collection visual for soaps, bundles and seasonal storytelling.", image: "/images/ecosuds/soap-range-wide.webp", badge: "Range" },
@@ -76,6 +73,13 @@ export default function EcoSudsPage() {
 
       <section className="section-pad-tight">
         <div className="container-page">
+          <Reveal><SectionHeader eyebrow="Why shop here" title="Clear trust cues for a small store that still feels polished." description="The storefront keeps customers oriented with category navigation, mobile quick actions, product details, and a real-person checkout path." align="center" /></Reveal>
+          <div className="mt-10"><FeatureBento features={storefront.trustCues} /></div>
+        </div>
+      </section>
+
+      <section className="section-pad-tight">
+        <div className="container-page">
           <Reveal><SectionHeader eyebrow="Brand strengths" title="A clean EcoSuds presentation with customer-friendly details." description="The brand page sells freshness, gifting and trust while keeping claims careful and product language concise." align="center" /></Reveal>
           <div className="mt-10"><FeatureBento features={bento} /></div>
         </div>
@@ -83,9 +87,8 @@ export default function EcoSudsPage() {
 
       <section className="section-pad">
         <div className="container-page">
-          <Reveal><SectionHeader eyebrow="Our products" title="Five product families with room to grow." description="Each category is separately editable in the CMS and has its own SEO-friendly category page." align="center" /></Reveal>
-          <div className="mt-10"><CategoryTiles categories={categories} products={products} /></div>
-          <div className="mt-12"><ShowcaseCarousel slides={gallery} label="EcoSuds product gallery" /></div>
+          <Reveal><SectionHeader eyebrow="Picture gallery" title="EcoSuds visuals for handmade self-care moments." description="A rotating gallery keeps the About Us page visual without repeating the product category block." align="center" /></Reveal>
+          <div className="mt-10"><ShowcaseCarousel slides={gallery} label="EcoSuds picture gallery" /></div>
         </div>
       </section>
     </>

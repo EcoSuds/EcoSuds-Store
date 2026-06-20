@@ -421,3 +421,13 @@ button, a, input, textarea, select { outline-color: var(--ring); -webkit-tap-hig
     object-position: center center;
   }
 }
+
+.mobile-dock-link-active {
+  background: var(--mint);
+  color: var(--text);
+  box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--sage), transparent 45%);
+}
+
+.mobile-dock-link-active svg {
+  color: var(--sage-strong);
+}
